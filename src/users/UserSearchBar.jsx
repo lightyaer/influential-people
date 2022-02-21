@@ -1,4 +1,11 @@
-function UserSearchBar({ onInput, onSearch, onReset, searchTerm, onNew }) {
+function UserSearchBar({
+  onInput,
+  onSearch,
+  onReset,
+  searchTerm,
+  onNew,
+  exportToCsv,
+}) {
   const styles = {
     button: "border-2 border-cyan-900 rounded-2xl p-2 mr-2",
     search: "",
@@ -24,6 +31,9 @@ function UserSearchBar({ onInput, onSearch, onReset, searchTerm, onNew }) {
       <div>
         <button className={styles.button} onClick={onNew}>
           New
+        </button>
+        <button className={styles.button} onClick={exportToCsv}>
+          Export to CSV
         </button>
       </div>
     </div>
