@@ -1,5 +1,11 @@
+import UserContainer from "./users/UserContainer";
+
 function App() {
-  return <div>Hello Vite</div>;
+  return (
+    <>
+      <UserContainer />
+    </>
+  );
 }
 
 export default App;
